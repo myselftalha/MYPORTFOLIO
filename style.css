@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@200;300&family=Roboto+Slab:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(18, 34, 49);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+hr{
+  border-radius: 50%;
+  height: 2px;
+  box-shadow: 0 0 5px 5px #48abe0;
+  margin: 30px 0;
+
+}
+.container{
+    width: 80%;
+    margin: 20px auto;
+}
+.title{
+    font-family: "Grey Qo", cursive;
+    font-size:40px;
+    text-shadow: 0px 10px 10px #cae2d8;
+}
+
+
+.navbar,.navLinks{
+    display: flex;
+
+}
+.navbar{
+    justify-content: space-between;
+    margin: 20px;
+    align-items: baseline;
+  
+}
+.navLinks{
+    list-style-type: none;
+    justify-content: space-around;
+    gap: 20px;
+}
+.navlink:hover{
+    text-shadow: 10px 5px 5px rgb(210, 210, 210);
+}
+.navlink{
+  text-decoration: none;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+.image{
+    width: 250px;
+    height: 250px;
+    border: double 8px transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.typing{
+    width: 340px;
+    animation: typing 2s steps(22) , blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;      
+    animation-iteration-count: infinite; 
+    transform-origin: 70% 70%;    
+    display: inline-block;
+    color: yellow;
+    
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) } 
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) } 
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  .about{
+      margin:50px 0 ;
+  }
+  .about-title{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    padding: 15px;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #48abe0, 0 0 40px #48abe0, 0 0 50px #48abe0, 0 0 60px #48abe0, 0 0 70px #48abe0;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #035c8c, 0 0 40px #035c8c, 0 0 50px #035c8c, 0 0 60px #035c8c, 0 0 70px #035c8c, 0 0 80px #035c8c;
+    }
+  }
+.about-para{
+  text-align: justify;
+}
+.foot{
+  display: flex;
+    justify-content: space-between;
+    margin:40px 0;
+}
+.sociallinks{
+  display: flex;
+  gap: 20px;
+  color: white;
+
+}
+.sociallinks>a>img{
+  border-radius: 5px;
+}
+.sociallinks>a>img:hover{
+  box-shadow: 0 0 5px 2px #48abe0;
+}
+.download{
+  background-color: #035c8c; /* Green */
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.8s all ease;
+}
+.download:hover{
+  color:  #035c8c;
+  background-color: white ;
+}
+
+
+    
